@@ -1,0 +1,14 @@
+.hero {
+  height: 80vh;
+  background-color: black;
+}
+.hero h1 {
+  color: gold;
+}
+.hero-row-btn {
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.hero-row-btn .col {
+  border: 1px solid rgb(0, 255, 26);
+}
