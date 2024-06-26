@@ -13,26 +13,35 @@ import {
   DropdownItem,
   NavbarText,
 } from "reactstrap";
-
+import "./Header.css";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className="navi">
       <Navbar expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarBrand href="#">Logo</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="#">Components</NavLink>
+              <NavLink href="#">O nás</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">GitHub</NavLink>
+              <NavLink href="#">Ceník</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
+            <NavItem>
+              <NavLink href="#">Foto</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Kontakt</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Rezervace</NavLink>
+            </NavItem>
+            {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Options
               </DropdownToggle>
@@ -42,9 +51,9 @@ function Header() {
                 <DropdownItem divider />
                 <DropdownItem>Reset</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown> */}
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          {/* <NavbarText>Simple Text</NavbarText> */}
         </Collapse>
       </Navbar>
     </div>

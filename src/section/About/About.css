@@ -1,0 +1,14 @@
+.about {
+  height: 100vh;
+  background-color: blanchedalmond;
+}
+.foto {
+  margin: 0 auto;
+  width: 80%;
+  height: 200px;
+  margin-bottom: 50px;
+  border: 1px solid red;
+}
+.about p {
+  text-align: justify;
+}

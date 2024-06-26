@@ -1,0 +1,18 @@
+.navi {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgb(0, 0, 0);
+}
+.nav-link {
+  color: gold;
+}
+.nav-link:hover {
+  color: goldenrod;
+}
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: blueviolet;
+}

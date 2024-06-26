@@ -1,9 +1,14 @@
 .hero {
-  height: 80vh;
-  background-color: black;
+  height: calc(100vh - 56px);
+  background-color: rgb(110, 108, 108);
+  padding-top: 60px;
 }
-.hero h1 {
+
+.hero-text {
   color: gold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 .hero-row-btn {
   text-align: center;
@@ -11,4 +16,13 @@
 }
 .hero-row-btn .col {
   border: 1px solid rgb(0, 255, 26);
+}
+.hero-scroller {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 120px;
+  border: 2px solid white;
 }
